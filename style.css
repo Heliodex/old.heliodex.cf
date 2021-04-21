@@ -1,1 +1,10 @@
+@font-face
+{
+	font-family: lexendDeca;
+	src: url('/lexend.ttf');
+}
 
+body
+{
+	font-family: lexendDeca;
+}
