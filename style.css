@@ -1,10 +1,25 @@
 @font-face
 {
-	font-family: lexendDeca;
+	font-family: "Heliodex";
+	src: url('/heliodex.ttf');
+}
+@font-face
+{
+	font-family: "lexendDeca";
 	src: url('/lexend.ttf');
 }
 
 body
 {
-	font-family: lexendDeca;
+	font-family: lexendDeca; /* i just want 2 fonts */
+	background-color: #303030;
+	color: #e3e3e3;
+}
+
+.title
+{
+	display: inline;
+	font-family: Heliodex;
+	font-size: 48px;
+	line-height: 38px;
 }
