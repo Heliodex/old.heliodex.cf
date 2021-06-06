@@ -1,8 +1,10 @@
+
 @font-face
 {
 	font-family: "Heliodex";
 	src: url('/heliodex.ttf');
 }
+
 @font-face
 {
 	font-family: "lexendDeca";
@@ -11,9 +13,14 @@
 
 body
 {
-	font-family: lexendDeca; /* i just want 2 fonts */
+	font-family: lexendDeca; /* i just want 2 fonts why wont it- oh works now*/
 	background-color: #303030;
 	color: #e3e3e3;
+
+	text-align: center;
+
+	margin-left: 15%; /* controls page width */
+	margin-right: 15%;
 }
 
 .title
@@ -22,4 +29,50 @@ body
 	font-family: Heliodex;
 	font-size: 48px;
 	line-height: 38px;
+}
+
+.headerbutton
+{ /* Stolen straight from DocSocial. lmao */
+	border: 0px solid #ffffff;
+	background-color: #343434;
+	margin: 5px;
+	margin-bottom: 0px;
+	max-width: 150px;
+	border-radius: 5px;
+	font-family: lexendDeca;
+	font-size: 14px;
+	padding-bottom: 22px;
+	padding-top: 5px;
+	height: 20px;
+	cursor: pointer;
+	position: relative;
+	color: #e3e3e3;
+	width:70px;
+}
+
+button:hover
+{
+	transition: transform 0.2s;
+	transform: scale(1.1);
+	background-color: #303030;
+}
+
+
+
+.main {
+  margin-left: 90px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 90px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #121212;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
 }
