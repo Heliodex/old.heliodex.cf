@@ -50,12 +50,9 @@ a:active
 
 .title
 {
-	display: inline;
 	font-family: Heliodex, 'Trebuchet MS', sans-serif;
 	font-size: 48px;
 	line-height: 38px;
-	text-align: center !important; 
-
 }
 
 .headerbutton
@@ -83,8 +80,6 @@ button:hover
 	transform: scale(1.1);
 	background-color: #303030;
 }
-
-
 
 .main 
 {
