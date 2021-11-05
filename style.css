@@ -7,8 +7,8 @@
 
 @font-face
 {
-	font-family: "lexendDeca";
-	src: url('/lexend.ttf');
+	font-family: "lexendDeca"; /* Readex Pro might actually be a better font than Lexend. */
+	src: url('/ReadexPro.ttf');
 }
 
 body
