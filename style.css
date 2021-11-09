@@ -1,18 +1,15 @@
 
-@font-face
-{
+@font-face {
 	font-family: "Heliodex";
 	src: url('/heliodex.ttf');
 }
 
-@font-face
-{
+@font-face {
 	font-family: "lexendDeca"; /* Readex Pro might actually be a better font than Lexend. */
 	src: url('/ReadexPro.ttf');
 }
 
-body
-{
+body {
 	background-color: #303030 !important; /* bootstrap be !important !important !important*/
 	color: #e3e3e3 !important;
 
@@ -22,41 +19,41 @@ body
 	margin-right: 0%;
 }
 
+p {
+	display: inline;
+}
 
-a:link 
-{
+
+a:link  {
 	color: cyan;
 	background-color: transparent;
 	text-decoration: underline;
 }
-a:visited 
-{
+a:visited  {
 	color: palevioletred;
 	background-color: transparent;
 	text-decoration: underline;
 }
-a:hover 
-{
+a:hover  {
 	color: red;
 	background-color: transparent;
 	text-decoration: underline;
 }
-a:active 
-{
+a:active  {
 	color: yellow;
 	background-color: transparent;
 	text-decoration: underline;
 }
 
-.title
-{
+.title {
 	font-family: Heliodex, 'Trebuchet MS', sans-serif;
 	font-size: 48px;
 	line-height: 38px;
+
+	display: block;
 }
 
-.headerbutton
-{ /* Stolen straight from DocSocial. lmao */
+.headerbutton { /* Stolen straight from DocSocial. lmao */
 	border: 0px solid #ffffff;
 	background-color: #343434;
 	margin: 5px;
@@ -74,23 +71,20 @@ a:active
 	width:70px;
 }
 
-button:hover
-{
+button:hover {
 	transition: transform 0.2s;
 	transform: scale(1.1);
 	background-color: #303030;
 }
 
-.main 
-{
+.main  {
 	margin-left: 90px; /* Same as the width of the sidebar */
 	padding: 0px 10px;
 	padding-top: 10px;
 }
 
 /* The sidebar menu */
-.sidenav 
-{
+.sidenav  {
 	height: 100%;
 	width: 90px; /* 90px Sidebar width */
 	position: fixed; /* Stay in place when scrolling */
@@ -109,16 +103,14 @@ button:hover
 
 
 /* Page dual-column code */
-.column 
-{
+.column  {
 	float: left;
 	width: 50%;
 	padding: 10px;
 }
 
 /* Clear floats after the columns */
-.row:after 
-{
+.row:after  {
 	content: "";
 	clear: both;
 	display: flex;
@@ -126,13 +118,12 @@ button:hover
 	flex-direction: row;
 }
 
-.lexend 
-{
+.lexend  {
 	font-family: lexendDeca, sans-serif; /* BOOTSTRAP WHY */
 }
 
-.test
-{
-	font-family: Tahoma  /* supports phonetic chars */, serif;
+.ipa {
+	font-family: Helvetica, Arial,  /* supports phonetic chars */ sans-serif;
 	line-height: 0px;
+	font-size: 16px;
 }
