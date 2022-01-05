@@ -10,13 +10,10 @@
 }
 
 body {
-	background-color: #303030 !important; /* bootstrap be !important !important !important*/
-	color: #e3e3e3 !important;
+	background-color: #303030;
+	color: #e3e3e3;
 
 	text-align: left;
-
-	margin-left: 0%; /* controls page width */
-	margin-right: 0%;
 }
 
 p {
@@ -48,7 +45,8 @@ a:active  {
 .title {
 	font-family: Heliodex, 'Trebuchet MS', sans-serif;
 	font-size: 48px;
-	line-height: 38px;
+	line-height: 0px;
+	text-align: center;
 
 	display: block;
 }
@@ -78,15 +76,13 @@ button:hover {
 }
 
 .main  {
-	margin-left: 90px; /* Same as the width of the sidebar */
-	padding: 0px 10px;
-	padding-top: 10px;
+	margin: 0px 0px 15px 100px; /* Width of the sidebar +15 */
 }
 
 /* The sidebar menu */
 .sidenav  {
 	height: 100%;
-	width: 90px; /* 90px Sidebar width */
+	width: 85px; /* Sidebar width */
 	position: fixed; /* Stay in place when scrolling */
 	z-index: 1; /* Stay on top */
 	top: 0; /* Stay at the top */
@@ -103,10 +99,16 @@ button:hover {
 
 
 /* Page dual-column code */
-.column  {
-	float: left;
-	width: 50%;
-	padding: 10px;
+@media screen and (min-width: 800px) {
+	.projects  {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+}
+
+.project {
+	grid-column-gap: 100px;
+	padding: 0px 5% 50px 0px;
 }
 
 /* Clear floats after the columns */
